@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "VitalMind",
+    "slug": "vitalmind",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "vitalmind",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2F95DC",
+    "jsEngine": "hermes",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vitalmind.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.vitalmind.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro",
+      "output": "static",
+      "pwa": {
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {
+        "origin": false,
+        "root": "app"
+      },
+      "eas": {
+        "projectId": "1dacde4f-8f5b-4ea1-86e6-b5ef7a4ef278"
+      }
+    },
+    "owner": "allicias",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/1dacde4f-8f5b-4ea1-86e6-b5ef7a4ef278",
+      "checkAutomatically": "ON_LOAD",
+      "codeSigningCertificate": "./code-signing/certificate.pem",
+      "codeSigningMetadata": {
+        "keyid": "main",
+        "alg": "rsa-v1_5-sha256"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}

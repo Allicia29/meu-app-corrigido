@@ -1,0 +1,47 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-native",
+    "module": "esnext",
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@navigation/*": [
+        "./src/navigation/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./custom.d.ts"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "custom.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
